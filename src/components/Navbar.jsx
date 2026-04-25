@@ -39,9 +39,10 @@ const Navbar = () => {
         </div>
         {/* For Desktop Items */}
         <div className="hidden md:flex gap-7">
-          {MenuItems.map((item) => {
+          {MenuItems.map((item, key) => {
             return (
               <a
+                key={key}
                 href={item.href}
                 className="relative text-white text-md hover:text-purple-600 hover:font-medium transition duration-300 group"
               >
@@ -63,9 +64,10 @@ const Navbar = () => {
       <div className="md:hidden">
         {showMenu && (
           <div className="flex flex-col gap-3 text-center mt-5 transition-all duration-500">
-            {MenuItems.map((item) => {
+            {MenuItems.map((item, key) => {
               return (
                 <a
+                  key={key}
                   href={item.href}
                   onClick={() => {
                     setShowMenu(!showMenu);

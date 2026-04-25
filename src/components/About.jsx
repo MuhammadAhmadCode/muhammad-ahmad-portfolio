@@ -46,9 +46,10 @@ const About = () => {
             </h4>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            {aboutInfo.map((info) => {
+            {aboutInfo.map((info, key) => {
               return (
                 <motion.div
+                  key={key}
                   whileHover={{ y: -10 }}
                   transition={{ duration: 0.3 }}
                   className="bg-[#2a2929] select-none rounded-2xl p-4 flex flex-col gap-4"
