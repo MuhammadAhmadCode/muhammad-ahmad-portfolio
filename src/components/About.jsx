@@ -15,13 +15,13 @@ const About = () => {
         <h1 className="text-4xl font-black">
           About <span className="text-purple-600">Me</span>
         </h1>
-        <h3 className="text-white/70 text-lg">
+        <h3 className="text-white/70 text-center text-lg">
           Get to know more about my journey and passion.
         </h3>
       </div>
 
-      <div className="flex w-full p-18 items-center justify-around">
-        <div className="md:w-1/2">
+      <div className="flex w-full p-18 md:items-center md:flex-row flex-col-reverse md:justify-around gap-5 md:gap-4">
+        <div className="md:w-1/2 md:block hidden">
           <motion.img
             whileHover={{ scale: 0.9 }}
             className="w-120 rounded-2xl border-2 border-white/50"
