@@ -31,7 +31,9 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="bg-[#1f1f1f] z-50 px-7 fixed w-full opacity-90 shadow-gray-800 shadow-lg py-5  ">
+    <nav
+      className={`bg-[#1f1f1f] z-50 px-7 transition duration-300 fixed w-full opacity-90 shadow-gray-800 shadow-lg py-5  ${showMenu ? "border  border-b-white rounded-b-full" : ""}`}
+    >
       <div className="container mx-auto flex items-center select-none justify-between">
         <div className="text-3xl flex gap-3 justify-center items-center font-bold text-white/80">
           M <span className="text-purple-600">Ahmad</span>{" "}
