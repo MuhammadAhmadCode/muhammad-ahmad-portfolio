@@ -8,7 +8,7 @@ const Hero = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       id="home"
-      className="min-h-screen text-white flex justify-between w-full pt-19 p-16 bg-linear-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
+      className="min-h-screen text-white flex justify-between w-full pt-30 p-16 bg-linear-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
     >
       <div className="flex md:w-1/2 mt-14 flex-col gap-6">
         <div>
