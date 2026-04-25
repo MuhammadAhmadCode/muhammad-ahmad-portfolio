@@ -22,7 +22,8 @@ const Skills = () => {
       <div className="grid md:grid-cols-3 gap-6 grid-cols-1">
         {skills.map((skill, index) => {
           return (
-            <div
+            <motion.div
+              whileHover={{ y: -20 }}
               key={index}
               className="p-7 flex flex-col gap-4 rounded-xl text-white bg-[#2a2929]"
             >
@@ -45,7 +46,7 @@ const Skills = () => {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
