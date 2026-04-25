@@ -8,17 +8,18 @@ const Hero = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       id="home"
-      className="min-h-screen text-white flex justify-between w-full pt-30 p-16 bg-linear-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
+      className="min-h-screen text-white flex md:flex-row flex-col-reverse  md:justify-between w-full pt-30 p-16 bg-linear-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
     >
-      <div className="flex md:w-1/2 mt-14 flex-col gap-6">
+      <div className="flex md:justify-normal md:items-start justify-center items-center md:w-1/2 mt-14 flex-col gap-6">
         <div>
-          <h1 className="text-5xl mb-4 font-black">
-            Hi, I am <span className="text-purple-600">M Ahmad</span>{" "}
+          <h1 className="text-3xl md:text-5xl mb-4 font-black">
+            Hi, I am{" "}
+            <span className="text-purple-600 md:flex block">M Ahmad</span>{" "}
           </h1>
-          <h2 className="text-4xl font-bold">Full Stack Developer</h2>
+          <h2 className="text-2xl font-bold">Full Stack Developer</h2>
         </div>
         <div>
-          <h4 className="text-xl text-white/80 w-[80%]">
+          <h4 className="text-xl text-white/80 text-center md:text-left md:w-[80%]">
             I create stunning web experiences with modern technologies and
             innovative design.
           </h4>
