@@ -45,7 +45,7 @@ const About = () => {
               In voluptate consectetur accusantium.
             </h4>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {aboutInfo.map((info, key) => {
               return (
                 <motion.div
