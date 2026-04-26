@@ -1,16 +1,89 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio built with React and Vite. This project showcases a clean, animated, and responsive landing page with sections for hero, about, skills, projects, contact, and footer.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation with mobile menu support
+- Animated section transitions using `motion/react`
+- Portfolio project gallery with demo and code CTA buttons
+- Skills section with dynamic cards and iconography
+- Contact form with contact details and social links
+- Clean dark UI using Tailwind CSS classes
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS
+- motion (for animations)
+- React Router DOM
+- React Icons
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/App.jsx` – main application wrapper and router
+- `src/main.jsx` – app entry point
+- `src/pages/Home.jsx` – single landing page composed of sections
+- `src/components/` – reusable UI components
+  - `Navbar.jsx`
+  - `Hero.jsx`
+  - `About.jsx`
+  - `Skills.jsx`
+  - `Projects.jsx`
+  - `Contact.jsx`
+  - `Footer.jsx`
+- `src/assets/assets.js` – image imports and content data for about, skills, and projects
+- `src/index.css` – global styles
+- `vite.config.js` – Vite setup with React and Tailwind plugins
+
+## Installation
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+
+   ```bash
+   npm run build
+   ```
+
+4. Preview production build:
+
+   ```bash
+   npm run preview
+   ```
+
+5. Run ESLint:
+
+   ```bash
+   npm run lint
+   ```
+
+## Notes
+
+- The contact form currently uses a placeholder button action and does not yet submit data.
+- Project demo/code links in `src/assets/assets.js` are currently placeholder values and can be replaced with real URLs.
+- The `about` section contains placeholder text that can be updated with a real biography.
+
+## Customization
+
+To personalize the portfolio:
+
+- Update the hero text in `src/components/Hero.jsx`
+- Replace `src/assets/profile.jpg` with your own profile image
+- Edit `src/assets/assets.js` to add your actual project details, skills, and about info
+- Add or modify social links in `src/components/Contact.jsx`
+
+## License
+
+This project is available under the MIT License. Feel free to reuse the structure and update the content for your own portfolio.
