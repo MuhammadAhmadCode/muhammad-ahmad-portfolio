@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import React from "react";
 import { projects } from "../assets/assets";
+import { BiSolidRightArrowAlt } from "react-icons/bi";
 
 const Projects = () => {
   return (
@@ -65,6 +66,16 @@ const Projects = () => {
           );
         })}
       </div>
+      <motion.a
+        whileTap={{ scale: 0.7 }}
+        whileHover={{ scale: 1.09 }}
+        transition={{ duration: 0.2 }}
+        href="https://github.com/MuhammadAhmadCode/"
+        target="_blank"
+        className="text-center flex mt-9 border border-white/70 w-fit p-3 mx-auto justify-center rounded-xl bg-[#2a2929] transition-all hover:text-white/80  hover:bg-[#3f3e3e] cursor-pointer items-center gap-2 text-xl font-bold"
+      >
+        View More projects <BiSolidRightArrowAlt className="text-2xl" />{" "}
+      </motion.a>
     </motion.div>
   );
 };
