@@ -3,20 +3,25 @@ import React from "react";
 import { BiPhoneCall, BiSolidLocationPlus } from "react-icons/bi";
 import { BsFacebook, BsGithub, BsInstagram, BsYoutube } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { href } from "react-router-dom";
 
 const Contact = () => {
   const socials = [
     {
       icon: <BsGithub />,
+      href: "https://github.com/MuhammadAhmadCode/",
     },
     {
       icon: <BsFacebook />,
+      href: "https://www.google.com/",
     },
     {
       icon: <BsInstagram />,
+      href: "https://www.google.com/",
     },
     {
       icon: <BsYoutube />,
+      href: "https://www.google.com/",
     },
   ];
   return (
@@ -114,11 +119,17 @@ const Contact = () => {
               <span className="text-xl font-bold">Follow Me On</span>
             </div>
             <div className="flex gap-3">
-              {socials.map((social) => {
+              {socials.map((social, index) => {
                 return (
-                  <span className="w-13 h-13 flex text-lg justify-center items-center bg-[#2a2929] rounded-full mt-5">
+                  <motion.a
+                    whileHover={{ scale: 1.09 }}
+                    href={social.href}
+                    target="_blank"
+                    key={index}
+                    className="w-13 cursor-pointer h-13 flex text-lg justify-center items-center bg-[#2a2929] transition-all hover:bg-[#383737] rounded-full mt-5"
+                  >
                     {social.icon}
-                  </span>
+                  </motion.a>
                 );
               })}
             </div>
