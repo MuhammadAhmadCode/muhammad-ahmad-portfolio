@@ -8,7 +8,7 @@ const Skills = () => {
       initial={{ y: 60, opacity: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="min-h-screen border-t-2 border-t-white/20 w-full p-20 "
+      className="min-h-screen border-t-2 border-t-white/20 w-full p-5 md:p-20 "
       id="skills"
     >
       <div className="flex mb-6 text-white items-center gap-2 flex-col">
