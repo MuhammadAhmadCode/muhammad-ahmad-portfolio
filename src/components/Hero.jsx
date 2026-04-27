@@ -1,5 +1,7 @@
 import { motion } from "motion/react";
 import React from "react";
+import { assets } from "../assets/assets";
+
 const Hero = () => {
   return (
     <motion.div
@@ -47,7 +49,7 @@ const Hero = () => {
           <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-600 to-pink-600 animate-pulse opacity-80">
             <motion.img
               className="absolute  rounded-full h-64 w-64 md:w-80 md:h-80 object-cover"
-              src="/src/assets/profile.jpg"
+              src={assets.profileImg}
               alt="profile"
               animate={{ y: [0, -20, 0] }}
               transition={{
